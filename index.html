@@ -33,7 +33,7 @@
                <div class="navbar-end pr-12 lg:pr-28">
                  <div class="font-semibold flex justify-center items-center gap-2">
                    <img class="w-6" src="./assets/coin.png" alt="">
-                   <span class="text-gray-600" id="">5500</span>
+                   <span class="text-gray-600" id="current-balance">5500</span>
                    </div>
                </div>
         </div>
@@ -57,10 +57,10 @@
                     class="max-w-lg rounded-lg shadow-2xl" />
                   </div>
                   <div>
-                    <div class="bg-slate-200 py-3 rounded-md w-32 flex justify-center items-center gap-2 mt-4 lg:mt-0">
+                    <div class="bg-slate-100 py-3 rounded-md w-32 flex justify-center items-center gap-2 mt-4 lg:mt-0">
                         <img class="w-6" src="./assets/coin.png" alt="">
-                       <div class="text-sm">
-                        <span id="money">0000</span> BDT
+                       <div class="text-sm font-semibold">
+                        <span id="money">500</span> BDT
                        </div>
                     </div>
                     <h1 class="text-2xl mt-7 font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -68,9 +68,27 @@
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
                     <div class="flex flex-col space-y-2">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered" />
-                        <button id="blog-btn" class="bg-[#B4F461] px-7 py-3 rounded-md font-semibold">Donation</button>
-                    </div>
+                        <input id="add-money" type="text" placeholder="Write Donation Amount" class="input input-bordered" />
+
+                        <!-- worning start -->
+                        <div id="worning" role="alert" class="alert alert-warning hidden py-1 w-80">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 shrink-0 stroke-current"
+                            fill="none"
+                            viewBox="0 0 24 24">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                          </svg>
+                          <span>Warning: Invalid email address!</span>
+                        </div>
+                        <!-- worning start -->
+
+                        <button id="donation-n-btn" class="bg-[#B4F461] px-7 py-3 rounded-md font-semibold">Donation</button>
+                    </div> 
                   </div>
                 </div>
               </div>

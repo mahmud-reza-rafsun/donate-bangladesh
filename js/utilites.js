@@ -1,3 +1,8 @@
+function getElementById(id){
+    const getElement = document.getElementById(id);
+    return getElement;
+}
+
 function showHistoryElements(id){
     donationBtn.classList.add('text-gray-600', 'border-2', 'border-gray-300');
     donationBtn.classList.remove('bg-[#B4F461]');
