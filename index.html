@@ -21,8 +21,8 @@
 </head>
 <body>
     <!-- navbar start -->
-    <div id="home-container" class="">
-        <div class="navbar bg-yellow-50">
+    <div class="">
+        <div id="home-container" class="navbar bg-yellow-50">
             <div class="navbar-start pl-12 lg:pl-28">
                 <button id="blog-btn" class="bg-[#B4F461] px-8 py-3 rounded-md font-semibold">Blog</button>
                </div>
@@ -38,17 +38,17 @@
                </div>
         </div>
         <div class="text-center py-16">
-            <button id="blog-btn" class="bg-[#B4F461] px-7 py-3 rounded-md font-semibold">Donation</button>
-            <button id="blog-btn" class="px-7 ml-4 py-3 text-gray-600 font-bold text-sm border-2 border-gray-300 rounded-md">History</button>
+            <button id="donation-btn" class="bg-[#B4F461] border-2 border-[#B4F461] px-7 py-3 rounded-md font-semibold">Donation</button>
+            <button id="history-btn" class="px-7 ml-4 py-3 text-gray-600 font-semibold border-2 border-gray-300 rounded-md">History</button>
 
         </div>
     </div>
     <!-- navbar end -->
 
     <!-- donate section start -->
-     <main class="grid gap-3">
+     <main id="donation-container" class="grid gap-3 px-12 lg:px-28">
         <!-- Noakhali Flood -->
-        <div class="px-12 lg:px-28">
+        <div class="">
             <div class="hero border-2 rounded-lg border-gray-200">
                 <div class="hero-content flex-col lg:flex-row">
                   <div>
@@ -76,7 +76,7 @@
               </div>
          </div>
          <!-- Feni Flood -->
-         <div class="px-12 lg:px-28">
+         <div class="">
             <div class="hero border-2 rounded-lg border-gray-200">
                 <div class="hero-content flex-col lg:flex-row">
                   <div>
@@ -104,7 +104,7 @@
               </div>
          </div>
          <!-- Quota Movement -->
-         <div class="px-12 lg:px-28">
+         <div class="">
             <div class="hero border-2 rounded-lg border-gray-200">
                 <div class="hero-content flex-col lg:flex-row">
                   <div>
@@ -134,7 +134,29 @@
      </main>
     <!-- donate section end -->
 
+     <!-- history start -->
+     <div id="history-container" class="min-h-screen hidden px-12 lg:px-28">
+      <div class="">
+        <div class="p-4 border-2 rounded-lg border-gray-200">
+            <div id="history-data"></div>
+          </div>
+     </div>
+    </div>
+      <!-- history end -->
+
+
+
+
+     <!-- footer section start -->
+        <footer class="footer footer-center bg-base-300 text-base-content p-4 mt-10">
+            <aside>
+            <p>Copyright © 2024 - All right reserved by <b><a href="">বৈষম্যবিরোধী ছাত্র আন্দোলন</a></b></p>
+            </aside>
+        </footer>
+     <!-- footer section end -->
+
     <script src="./js/utilites.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/blog.js"></script>
 </body>
 </html>
