@@ -24,6 +24,6 @@ donationBtnN.addEventListener('click', function(){
     const newBalance = currentBalanceNumber - newMoneyNumber;
     const newMoney = newMoneyNumber + moneyNumber;
 
-    document.getElementById('current-balance').innerText = newBalance;
-    document.getElementById('money').innerText = newMoney;
+    document.getElementById('current-balance').innerText = newBalance.toFixed(2);
+    document.getElementById('money').innerText = newMoney.toFixed(2);
 })
