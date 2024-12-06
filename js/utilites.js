@@ -28,3 +28,11 @@ function showDonationElement(id){
     donationContainer.classList.remove('hidden');
     return id;
 }
+
+function getInputValueById(id){
+    return addMoney = parseFloat(document.getElementById(id).value);
+}
+
+function getTextValueById(id){
+    return currentBalance = parseFloat(document.getElementById(id).innerText);
+}
