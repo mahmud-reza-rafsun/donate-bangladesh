@@ -7,12 +7,17 @@ donationBtnN.addEventListener('click', function(){
     // get text value
     const currentBalance = getTextValueById('current-balance');
     const money = getTextValueById('money')
-    // calculation money
-    const newBalance = currentBalance - addMoney.toFixed(2);
-    const newMoney = addMoney + money;
-    // set new value to balance
-    document.getElementById('current-balance').innerText = newBalance;
-    document.getElementById('money').innerText = newMoney.toFixed(2);
+    // condition to remove NaN
+    if(!isNaN(addMoney) && addMoney !== 0){
+        // calculation money
+        const newBalance = currentBalance - addMoney.toFixed(2);
+        const newMoney = addMoney + money;
+        // set new value to balance
+        document.getElementById('current-balance').innerText = newBalance;
+        document.getElementById('money').innerText = newMoney.toFixed(2);
+    }else{
+       alert('Not Added')
+    }
     // show modal
     document.getElementById('my_modal_5').classList.remove('hidden');
     // error check
@@ -40,12 +45,17 @@ donationFbtn.addEventListener('click', function(){
     // get text value
     const currentBalance = getTextValueById('current-balance');
     const moneyOne = getTextValueById('money-1')
-    // calculation money
-    const newBalance = currentBalance - addMoney.toFixed(2);
-    const newMoney = addMoney + moneyOne;
-    // set new value to balance
-    document.getElementById('current-balance').innerText = newBalance;
-    document.getElementById('money-1').innerText = newMoney.toFixed(2);
+    // condition to remove NaN
+    if(!isNaN(addMoney) && addMoney !== 0){
+        // calculation money
+        const newBalance = currentBalance - addMoney.toFixed(2);
+        const newMoney = addMoney + moneyOne;
+        // set new value to balance
+        document.getElementById('current-balance').innerText = newBalance;
+        document.getElementById('money-1').innerText = newMoney.toFixed(2);
+    }else{
+       alert('Not Added')
+    }
     // show modal
     document.getElementById('my_modal_5').classList.remove('hidden');
     // error check
@@ -66,6 +76,7 @@ donationFbtn.addEventListener('click', function(){
 })
 
 // Quota Movement
+
 const donationQuotaBtn = getElementById('donation-quota-btn');
 donationQuotaBtn.addEventListener('click', function(){
     // get input value
@@ -73,12 +84,17 @@ donationQuotaBtn.addEventListener('click', function(){
     // get text value
     const currentBalance = getTextValueById('current-balance');
     const moneyTow = getTextValueById('money-2')
-    // calculation money
-    const newBalance = currentBalance - addMoney.toFixed(2);
-    const newMoney = addMoney + moneyTow;
-    // set new value to balance
-    document.getElementById('current-balance').innerText = newBalance;
-    document.getElementById('money-2').innerText = newMoney.toFixed(2);
+    // condition to remove NaN
+    if(!isNaN(addMoney) && addMoney !== 0){
+        // calculation money
+        const newBalance = currentBalance - addMoney.toFixed(2);
+        const newMoney = addMoney + moneyTow;
+        // set new value to balance
+        document.getElementById('current-balance').innerText = newBalance;
+        document.getElementById('money-2').innerText = newMoney.toFixed(2);
+    }else{
+        alert('Donate No Added...!!')
+    }
     // show modal
     document.getElementById('my_modal_5').classList.remove('hidden');
     // error check
