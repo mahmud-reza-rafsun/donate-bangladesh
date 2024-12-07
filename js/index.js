@@ -1,7 +1,3 @@
-// toggle page home
-document.getElementById('home-btn').addEventListener('click', function(){
-    window.location.href = './index.html';
-});
 
 // Flood at Noakhali
 const donationBtnN = getElementById('donation-n-btn');

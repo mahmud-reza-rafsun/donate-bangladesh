@@ -1,3 +1,8 @@
+// toggle page home
+document.getElementById('home-btn').addEventListener('click', function(){
+    window.location.href = './index.html';
+});
+
 function getElementById(id){
     const getElement = document.getElementById(id);
     return getElement;
